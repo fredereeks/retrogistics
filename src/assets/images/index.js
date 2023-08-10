@@ -1,30 +1,30 @@
 
-import dish1 from "./dish1.png"
-import dish2 from "./dish2.png"
-import dish3 from "./dish3.png"
-import dish4 from "./dish4.png"
-import dish5 from "./dish5.jpeg"
-import dish6 from "./dish6.png"
-import dish7 from "./dish7.jpeg"
-import dish8 from "./dish8.png"
-import dish9 from "./dish9.png"
-import dish10 from "./dish10.png"
-import dish11 from "./dish11.png"
-import dish12 from "./dish12.png"
-import dish13 from "./dish13.png"
+import container_hanging5 from "./container_hanging5.png"
+import container_stack1 from "./container_stack1.png"
+import freight_support1 from "./freight_support1.jpg"
+import freight_support2 from "./freight_support2.jpg"
+import freight_support3 from "./freight_support3.jpg"
+import freight_transport1 from "./freight_transport1.jpg"
+import freight_transport2 from "./freight_transport2.jpg"
+import freight_transport3 from "./freight_transport3.jpg"
+import container_hanging1 from "./container_hanging1.jpg"
+import container_hanging2 from "./container_hanging2.jpg"
+import container_hanging2b from "./container_hanging2.png"
+import container_hanging3 from "./container_hanging3.png"
+import container_hanging4 from "./container_hanging4.jpg"
 
 export {
-    dish1,
-    dish2,
-    dish3,
-    dish4,
-    dish5,
-    dish6,
-    dish7,
-    dish8,
-    dish9,
-    dish10,
-    dish11,
-    dish12,
-    dish13,
+    container_hanging5,
+    container_stack1,
+    freight_support1,
+    freight_support2,
+    freight_support3,
+    freight_transport1,
+    freight_transport2,
+    freight_transport3,
+    container_hanging1,
+    container_hanging2,
+    container_hanging2b,
+    container_hanging3,
+    container_hanging4,
 }
