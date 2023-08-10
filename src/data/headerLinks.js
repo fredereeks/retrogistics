@@ -16,7 +16,7 @@ export const headerLinks = [
     },
     {
         id: 334,
-        url: "/products",
-        title: "Products",
+        url: "/office",
+        title: "Office",
     },
 ]
