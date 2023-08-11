@@ -1,15 +1,15 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
-import {IoPlayCircleOutline} from 'react-icons/io5'
+import {IoGlobeOutline, IoPlayCircleOutline} from 'react-icons/io5'
 import { container_hanging3, container_stack1, freight_support3, freight_transport1 } from '../assets/images'
 import Button from '../components/Button'
-import StepCard from '../components/StepCard'
-import { steps } from '../data'
+import { deliveries, steps } from '../data'
+import { DeliveryCard, StepCard } from '../components'
 
 export default function Home() {
   return (
     <main className="relative flex flex-col bg-white">
-      <section className="relative flex flex-col px-5 md:py-20 overflow-hidden">
+      <section className="hero relative flex flex-col px-5 md:py-20 overflow-hidden">
         <img src={container_hanging3} alt="background slide" className="absolute h-full w-full top-0 sm:left-[20%] md:left-[5%] md:scale-x-[1.5] md:scale-y-[1.2] object-cover md:object-contain" />
         <div className="container mx-auto max-w-[1096px] relative flex flex-col gap-4">
           <div className="flex justify-between md:items-center flex-col md:flex-row gap-3">
@@ -35,8 +35,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-slate-900 rounded-[1rem] overflow-hidden mt-5 px-5 py-10">
-        <div className="container max-w-[1096px] flex flex-col items-stretch sm:grid sm:grid-cols-2 gap-5">
+      <section className="bg-slate-900 rounded-[1rem] overflow-hidden mt-5 px-5 py-10 relative">
+        <IoGlobeOutline className="absolute text-9xl opacity-10 scale-[4] -top-[10%] left-[70%] rotate-[35deg] text-slate-500" />
+        <div className="container relative max-w-[1096px] flex flex-col items-stretch sm:grid sm:grid-cols-2 gap-5">
           <div className="flex flex-[370px] sm:flex-1 relative rounded-[3.1rem] border-[12px] border-slate-900 overflow-hidden">
             <img src={container_stack1} alt="" className="absolute top-0 left-0 w-full h-full" />
             <img src={freight_transport1} alt="" className="absolute object-cover top-0 left-0 w-[200px] h-[150px] md:w-[250px] md:h-[200px] rounded-[2rem] border-[12px] border-slate-900" />
@@ -63,12 +64,26 @@ export default function Home() {
             <p className="ml-auto text-slate-600 text-sm md:text-base leading-relaxed max-w-lg sm:max-w-xs">We treat customers like KING. Everything you need, everything is guaranteed and fast with Retrogistics!</p>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-10">
+        <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 grid-flow-dense md:grid-cols-4 gap-4 py-10">
           {
             steps.map((step, index) => (<StepCard key={step.id} {...step} index={index} />))
           }
         </div>
       </section>
+      <section className="delivery bg-gray-50 px-5 py-10">
+        <div className="container mx-auto max-w-[1096px] flex flex-col gap-4">
+          <div className="flex flex-col gap-2 md:flex-row md:justify-beween md:items-center">
+            <h2 className="text-slate-900 text-4xl font-normal max-w-sm">Delivery of your <span className="text-orange-500">Package!</span></h2>
+            <p className="ml-auto text-slate-600 text-sm md:text-base leading-relaxed max-w-lg sm:max-w-xs">We provide all access to simplify and expedite your packge delivery. Retrogistics gives you the best!</p>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] justify-center gap-4 py-10">
+          {
+            deliveries.map((delivery, index) => (<DeliveryCard key={delivery.id} {...delivery} />))
+          }
+        </div>
+      </section>
+
     </main>
   )
 }
