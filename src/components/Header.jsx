@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 // import { dish1 } from '../assets/images'
 import { headerLinks } from '../data/headerLinks'
 import LinkCard from './LinkCard'
+import Button from './Button'
 
 
 export default function Header() {
@@ -19,7 +20,7 @@ export default function Header() {
                 <LinkCard key={link.id} url={link.url} title={link.title} />
               ))
             }
-            <Link to={"/contact"} className="py-2 px-5 bg-white text-sm md:text-md text-slate-700 md:border-[1px] md:border-slate-700 rounded-[2rem] md:ml-[4rem] hover:text-slate-900 md:rounded-2rem md:text-center">{"Get in Touch"}</Link>
+            <Button to={"/contact"} text={"Get In Touch"} className={"py-2 px-5 bg-white text-sm md:text-md text-slate-700 md:border-[1px] md:border-slate-700 rounded-[2rem] md:ml-[4rem] hover:text-slate-50 hover:bg-slate-900 md:rounded-2rem md:text-center"} />
           </ul>
         </nav>
       </div>
