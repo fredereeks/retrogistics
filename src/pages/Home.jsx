@@ -11,7 +11,7 @@ export default function Home() {
     <main className="relative flex flex-col bg-white">
       <section className="hero relative flex flex-col px-5 md:py-20 overflow-hidden">
         <img src={container_hanging3} alt="background slide" className="absolute h-full w-full top-0 sm:left-[20%] md:left-[5%] md:scale-x-[1.5] md:scale-y-[1.2] object-cover md:object-contain" />
-        <div className="container mx-auto max-w-[1096px] relative flex flex-col gap-4">
+        <div className="container mx-auto max-w-[1024px] relative flex flex-col gap-4">
           <div className="flex justify-between md:items-center flex-col md:flex-row gap-3">
             <div className="flex flex-col gap-4 flex-1">
               <h2 className="text-slate-700 text-5xl sm:text-6xl font-normal max-w-md">We will <span className="text-orange-500">Deliver</span> your <span className="text-orange-500">Package</span></h2>
@@ -37,7 +37,7 @@ export default function Home() {
       </section>
       <section className="bg-slate-900 rounded-[1rem] overflow-hidden mt-5 px-5 py-20 relative">
         <IoGlobeOutline className="absolute text-9xl opacity-10 scale-[4] -top-[10%] left-[70%] rotate-[35deg] text-slate-500" />
-        <div className="container relative mx-auto max-w-[1096px] flex flex-col items-stretch sm:grid sm:grid-cols-2 gap-5">
+        <div className="container relative mx-auto max-w-[1024px] flex flex-col items-stretch sm:grid sm:grid-cols-2 gap-5">
           <div className="flex flex-[370px] sm:flex-1 relative rounded-tr-[3.1rem] rounded-bl-[3.1rem] rounded-none border-[12px] border-slate-900 overflow-hidden">
             <img src={container_stack1} alt="" className="absolute top-0 left-0 w-full h-full" />
             <div className="absolute top-0 left-0 w-[200px] h-[150px] md:w-[250px] md:h-[200px] rounded-none rounded-br-[2rem] border-[12px] border-slate-900 bg-slate-900">
@@ -62,7 +62,7 @@ export default function Home() {
         </div>
       </section>
       <section className="steps bg-gray-50 px-5 py-20">
-        <div className="container mx-auto max-w-[1096px] flex flex-col gap-4">
+        <div className="container mx-auto max-w-[1024px] flex flex-col gap-4">
           <div className="flex flex-col gap-2 md:flex-row md:justify-beween md:items-center">
             <h2 className="text-slate-900 text-4xl font-normal max-w-sm"><span className="text-orange-500">Everything</span> you need we have!</h2>
             <p className="sm:ml-auto text-slate-600 text-sm md:text-base leading-relaxed max-w-lg sm:max-w-xs">We treat customers like KING. Everything you need, everything is guaranteed and fast with Retrogistics!</p>
@@ -76,7 +76,7 @@ export default function Home() {
       </section>
       <Banner key={9237} title="Are You Ready to Get Started" image={freight_transport3} text={"Start Shipping Now"} to="/contact"  />
       <section className="delivery bg-gray-50 px-5 py-20">
-        <div className="container mx-auto max-w-[1096px] flex flex-col gap-4">
+        <div className="container mx-auto max-w-[1024px] flex flex-col gap-4">
           <div className="flex flex-col gap-2 md:flex-row md:justify-beween md:items-center">
             <h2 className="text-slate-900 text-4xl font-normal max-w-sm">Delivery of your <span className="text-orange-500">Package!</span></h2>
             <p className="sm:ml-auto text-slate-600 text-sm md:text-base leading-relaxed max-w-lg sm:max-w-xs">We provide all access to simplify and expedite your packge delivery. Retrogistics gives you the best!</p>

@@ -10,7 +10,7 @@ export default function Header() {
   return (
     // <header className="bg-white sm:bg-red-700 md:bg-cyan-700 lg:bg-lime-700">
     <header className="relative bg-white p-5">
-      <div className="container max-w-[1096px] mx-auto flex justify-between">
+      <div className="container max-w-[1024px] mx-auto flex justify-between">
         <Link to={"/"} className="relative h-[50px] w-[50px] flex items-center gap-2 before:border-[1rem] before:border-transparent before:border-l-orange-500 before:absolute before:top-0 before:left-0 before:h-0 before:w-full before:z-10 before:bg-transparent after:border-[1.5rem] after:border-transparent after:border-r-slate-900 after:absolute after:-top-[15%] after:-left-[30%] after:h-0 after:w-full after:z-5 after:bg-transparent">
         </Link>
         <nav className="absolute z-[99] top-full left-0 w-full sm:w-max sm:relative">
