@@ -1,5 +1,6 @@
 
 import Banner from "./Banner.jsx"
+import BreadCrumb from "./BreadCrumb.jsx"
 import Button from "./Button.jsx"
 import DeliveryCard from "./DeliveryCard.jsx"
 import Footer from "./Footer.jsx"
@@ -9,6 +10,7 @@ import StepCard from "./StepCard.jsx"
 
 export {
     Banner,
+    BreadCrumb,
     Button,
     DeliveryCard,
     Footer,
