@@ -1,9 +1,10 @@
 import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom"
-import Home from "./pages/Home";
 import About from "./pages/About";
-import Error from "./pages/Error";
-import Foods from "./pages/Foods";
+import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import Error from "./pages/Error";
+import Home from "./pages/Home";
+import Services from "./pages/Services";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -32,12 +33,16 @@ function App() {
           element: <About />
         },
         {
-          path: "/foods",
-          element: <Foods />
+          path: "/blog",
+          element: <Blog />
         },
         {
           path: "/contact",
           element: <Contact />
+        },
+        {
+          path: "/services",
+          element: <Services />
         },
       ],
       errorElement: <Error />
