@@ -7,6 +7,7 @@ import Footer from "./Footer.jsx"
 import Header from "./Header.jsx"
 import LinkCard from "./LinkCard.jsx"
 import StepCard from "./StepCard.jsx"
+import WorkingCard from "./WorkingCard.jsx"
 
 export {
     Banner,
@@ -17,4 +18,5 @@ export {
     Header,
     LinkCard,
     StepCard,
+    WorkingCard,
 }

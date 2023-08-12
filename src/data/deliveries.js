@@ -1,11 +1,11 @@
-import { IoPaperPlaneOutline, IoCarOutline, IoBoatOutline } from "react-icons/io5";
+import { IoAirplaneOutline, IoCarOutline, IoBoatOutline } from "react-icons/io5";
 
 export const deliveries = [
     {
         id: 2934,
         title: "World Wide Freight",
-        icon: <IoPaperPlaneOutline className="text-lg md:text-xl text-slate-600 group-hover:text-orange-500" />,
-        bg: <IoPaperPlaneOutline className="absolute group-hover:text-orange-50 text-9xl opacity-10 scale-[2] -top-[10%] left-[70%] rotate-[35deg] text-slate-500" />,
+        icon: <IoAirplaneOutline className="text-lg md:text-xl text-slate-600 group-hover:text-orange-500" />,
+        bg: <IoAirplaneOutline className="absolute group-hover:text-orange-50 text-9xl opacity-10 scale-[2] -top-[10%] left-[70%] rotate-[35deg] text-slate-500" />,
         text: "We can help you fly your packages to anyone, anywhere in the world!",
     },
     {
