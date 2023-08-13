@@ -1,5 +1,6 @@
 
 import Banner from "./Banner.jsx"
+import BlogCard from "./BlogCard.jsx"
 import BreadCrumb from "./BreadCrumb.jsx"
 import Button from "./Button.jsx"
 import DeliveryCard from "./DeliveryCard.jsx"
@@ -11,6 +12,7 @@ import WorkingCard from "./WorkingCard.jsx"
 
 export {
     Banner,
+    BlogCard,
     BreadCrumb,
     Button,
     DeliveryCard,

@@ -7,6 +7,8 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import TermsConditions from "./pages/TermsConditions";
+import PrivacyPolicies from "./pages/PrivacyPolicies";
 
 function App() {
   const Layout = () => {
@@ -41,8 +43,16 @@ function App() {
           element: <Contact />
         },
         {
+          path: "/privacy-policies",
+          element: <PrivacyPolicies />
+        },
+        {
           path: "/services",
           element: <Services />
+        },
+        {
+          path: "/terms-and-conditions",
+          element: <TermsConditions />
         },
       ],
       errorElement: <Error />
