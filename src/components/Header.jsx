@@ -12,6 +12,7 @@ export default function Header() {
   const header = useRef();
   const navRef = useRef();
   const location = useLocation();
+  console.log({fixed})
 
   useEffect(() => {
     window.onscroll = () => {
