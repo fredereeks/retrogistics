@@ -1,15 +1,17 @@
 
-import Banner from "./Banner.jsx"
-import BlogCard from "./BlogCard.jsx"
-import BlogSingleCard from "./BlogSingleCard.jsx"
-import BreadCrumb from "./BreadCrumb.jsx"
-import Button from "./Button.jsx"
-import DeliveryCard from "./DeliveryCard.jsx"
-import Footer from "./Footer.jsx"
-import Header from "./Header.jsx"
-import LinkCard from "./LinkCard.jsx"
-import StepCard from "./StepCard.jsx"
-import WorkingCard from "./WorkingCard.jsx"
+import Banner from "./Banner"
+import BlogCard from "./BlogCard"
+import BlogSingleCard from "./BlogSingleCard"
+import BreadCrumb from "./BreadCrumb"
+import Button from "./Button"
+import ButtonClickable from "./ButtonClickable"
+import CommentCard from "./CommentCard"
+import DeliveryCard from "./DeliveryCard"
+import Footer from "./Footer"
+import Header from "./Header"
+import LinkCard from "./LinkCard"
+import StepCard from "./StepCard"
+import WorkingCard from "./WorkingCard"
 
 export {
     Banner,
@@ -17,6 +19,8 @@ export {
     BlogSingleCard,
     BreadCrumb,
     Button,
+    ButtonClickable,
+    CommentCard,
     DeliveryCard,
     Footer,
     Header,
