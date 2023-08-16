@@ -79,7 +79,7 @@ export default function BlogSingle() {
     <main className="flex flex-col">
       <BreadCrumb page={"/"} extra={{ page: "/blog", title: "Blog" }} title={`${blog?.title}`} />
       <section className="bg-white px-5 py-20">
-        <div className="container max-w-1024px mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="container max-w-[1024px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
           <article className="blog__contents flex flex-col gap-4 md:col-span-2">
             <h2 className="text-slate-700 text-2xl font-medium">{blog?.title}</h2>
             <div className="flex gap-2 pt-2 sm:gap-10 items-center">
@@ -183,7 +183,7 @@ export default function BlogSingle() {
           <aside className="flex md:flex-col gap-3 flex-wrap">
             <p className="w-max text-orange-500 text-2xl pb-2 mb-5 font-medium border-b-2 border-b-slate-800">Suggested Links</p>
             {
-              blogs.filter(item => item.id !== blogId).slice(0, 5).map(blog => (<BlogSingleCard key={blog.id} {...blog} />))
+              blogs.filter(item => item.id !== blogId).slice(0, 4).map(blog => (<BlogSingleCard key={blog.id} {...blog} />))
             }
           </aside>
         </div>

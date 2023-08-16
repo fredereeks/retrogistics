@@ -65,7 +65,7 @@ function App() {
     
   ])
   return (
-   <div className="bg-gray-100 transition-all duration-300">
+   <div className="bg-gray-100 transition-all duration-300 overflow-x-hidden">
     <RouterProvider router={router}></RouterProvider>
    </div>
   );
