@@ -16,7 +16,7 @@ export default function Footer() {
           </div>
           <p className="pb-2 text-slate-200 text-xs sm:text-sm leading-loose md:leading-tight">Retrogistics is the leading web-based order management and shipping software designed to make retailers exceptionally effieicne at processing and shipping</p>
         </div>
-        <div className="col-span-2 flex flex-wrap gap-4 sm:justify-around sm:pt-6">
+        <div className="col-span-2 flex flex-wrap gap-4 sm:justify-around sm:pt-6 md:pl-10">
           <ul className="flex flex-col flex-1 sm:w-max">
             {
               headerLinks.map(link => (<FooterLink blank={false} key={link.id} {...link} />))

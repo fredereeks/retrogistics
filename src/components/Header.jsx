@@ -30,7 +30,7 @@ export default function Header() {
   }, [location])
   return (
     // <header className="bg-white sm:bg-red-700 md:bg-cyan-700 lg:bg-lime-700">
-    <header ref={header} className={`${fixed ? 'fixed shadow-md shadow-[#0001]' : 'relative'} max-w-full top-0 left-0 z-[1999] bg-white p-5`}>
+    <header ref={header} className={`${fixed ? 'fixed shadow-md shadow-[#0001]' : 'relative'} max-w-full w-full top-0 left-0 z-[1999] bg-white p-5`}>
       <div className="container max-w-[1024px] mx-auto flex justify-between">
         <Link to={"/"} className="relative h-[50px] w-[50px] flex items-center gap-2 before:border-[1rem] before:border-transparent before:border-l-orange-500 before:absolute before:top-0 before:left-0 before:h-0 before:w-full before:z-10 before:bg-transparent after:border-[1.5rem] after:border-transparent after:border-r-slate-900 after:absolute after:-top-[15%] after:-left-[30%] after:h-0 after:w-full after:z-5 after:bg-transparent">
         </Link>

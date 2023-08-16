@@ -25,8 +25,8 @@
   "browser": {
     "crypto": false
   },
-  "resolve.fallback": { 
-    "crypto": false 
+  "resolve.fallback": {
+    "crypto": false
   },
   "scripts": {
     "start": "react-scripts start",

@@ -11,6 +11,8 @@ import Footer from "./Footer"
 import Header from "./Header"
 import LinkCard from "./LinkCard"
 import StepCard from "./StepCard"
+import TextArea from "./TextArea"
+import TextInput from "./TextInput"
 import WorkingCard from "./WorkingCard"
 
 export {
@@ -26,5 +28,7 @@ export {
     Header,
     LinkCard,
     StepCard,
+    TextArea,
+    TextInput,
     WorkingCard,
 }

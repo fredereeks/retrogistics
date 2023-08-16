@@ -10,6 +10,7 @@ import Services from "./pages/Services";
 import TermsConditions from "./pages/TermsConditions";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const Layout = () => {
@@ -66,6 +67,7 @@ function App() {
   ])
   return (
    <div className="bg-gray-100 transition-all duration-300 overflow-x-hidden">
+    <Toaster />
     <RouterProvider router={router}></RouterProvider>
    </div>
   );
