@@ -1,7 +1,7 @@
 import React from 'react'
-import { Banner, BreadCrumb, Button, WorkingCard } from '../components'
+import { Banner, BreadCrumb, Button, StepCard, WorkingCard } from '../components'
 import { container_hanging4, freight_transport2 } from '../assets/images'
-import { workings } from '../data'
+import { steps, workings } from '../data'
 
 export default function About() {
   return (
@@ -26,6 +26,19 @@ export default function About() {
               <p className={`relative before:[content:'"'] before:font-serif before:text-6xl before:absolute before:-rotate-12 before:font-bold before:text-orange-300 before:-translate-x-7 text-xs text-slate-500`}>A very good service. The driver was prompt both at pickup and delivery. Shout to Mr. Omar for being supportive and cooperative throughout. Will sure call again. </p>
               <h6 className="text-slate-700 text-sm sm:text-[.9rem] font-medium">Loyal Customer</h6>
             </aside>
+          </div>
+        </div>
+      </section>
+      <section className="steps bg-gray-50 px-5 py-20">
+        <div className="container mx-auto max-w-[1024px] flex flex-col gap-4">
+          <div className="flex flex-col gap-2 md:flex-row md:justify-beween md:items-center">
+            <h2 className="text-slate-900 text-4xl font-normal max-w-sm"><span className="text-orange-500">Everything</span> you need we have!</h2>
+            <p className="sm:ml-auto text-slate-600 text-sm md:text-base leading-relaxed max-w-lg sm:max-w-xs">We treat customers like KING. Everything you need, everything is guaranteed and fast with Retrogistics!</p>
+          </div>
+          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 grid-flow-dense md:grid-cols-4 gap-4 py-10">
+            {
+              steps.map((step, index) => (<StepCard key={step.id} {...step} index={index} />))
+            }
           </div>
         </div>
       </section>

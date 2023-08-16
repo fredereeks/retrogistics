@@ -15,7 +15,7 @@ export default function Blog() {
           }
         </div>
       </section>
-      <section className="bg-slate-900 rounded-[1rem] overflow-hidden mt-5 px-5 py-20 relative">
+      <section className="bg-slate-900 overflow-hidden mt-5 px-5 py-20 relative">
         <div className="container max-w-[1024px] mx-auto flex flex-col gap-6">
           <div className="flex flex-col items-center gap-2 text-center">
             <p className="text-slate-600 text-sm sm:text-base font-medium">See our Other</p>

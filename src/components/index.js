@@ -10,6 +10,7 @@ import DeliveryCard from "./DeliveryCard"
 import Footer from "./Footer"
 import Header from "./Header"
 import LinkCard from "./LinkCard"
+import ServiceCard from "./ServiceCard"
 import StepCard from "./StepCard"
 import TextArea from "./TextArea"
 import TextInput from "./TextInput"
@@ -27,6 +28,7 @@ export {
     Footer,
     Header,
     LinkCard,
+    ServiceCard,
     StepCard,
     TextArea,
     TextInput,
