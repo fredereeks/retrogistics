@@ -41,7 +41,7 @@ export default function Contact() {
           </div>
           <div className="relative grid grid-cols-1 md:grid-cols-2  gap-6 md:items-stretch">
             <aside className="col-span-1 row-start-2 md:row-start-1 flex flex-col gap-6 py-5 relative z-10">
-              <form onSubmit={handleSubmit} id="contact-form" className="flex flex-col mx-auto w-[32rem] md:w-full bg-gray-100/50 pb-4">
+              <form onSubmit={handleSubmit} id="contact-form" className="flex flex-col mx-auto w-[22rem] sm:w-[32rem] md:w-full bg-gray-100/50 pb-4">
                 <div className="bg-slate-700 p-3 flex justify-center items-center">
                   <Link to={"/"} className="relative mt-3 h-[50px] w-[50px] flex items-center gap-2 before:border-[1rem] before:border-transparent before:border-l-orange-500 before:rounded-[1rem] before:absolute before:top-0 before:left-0 before:h-0 before:w-full before:z-10 before:bg-transparent after:border-[1.5rem] after:border-transparent after:border-r-white after:rounded-[2rem] after:absolute after:-top-[15%] after:-left-[30%] after:h-0 after:w-full after:z-5 after:bg-transparent">
                   </Link>
@@ -77,7 +77,7 @@ export default function Contact() {
               </form>
             </aside>
             <aside className="col-span-1 row-start-1 relative">
-              <div className="relative flex flex-col md:justify-center sm:mx-auto gap-6 sm:gap-8 md:gap-10 mx-auto w-[32rem] md:w-full">
+              <div className="relative flex flex-col sm:justify-center sm:mx-auto gap-6 sm:gap-8 md:gap-10 mx-auto w-[22rem] sm:w-[32rem] md:w-full">
                 <h2 className="text-slate-800 text-center md:text-left text-2xl sm:text-3xl lg:text-4xl font-medium max-w-lg">We have a <span className="text-orange-500">team of Shipping</span> Experts committed to helping you grow!</h2>
                 <p className="text-slate-500 text-center md:text-left text-sm md:text-base leading-loose max-w-lg">Whether you are an established business or just getting started, you will have access to free, comprehensive onboarding support</p>
                 <div className="grid grid-cols-2 gap-2 sm:gap-5">

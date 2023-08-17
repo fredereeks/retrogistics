@@ -11,7 +11,7 @@ export default function Home() {
     <main className="relative flex flex-col bg-white">
       <section className="hero relative flex flex-col px-5 md:py-20 overflow-hidden">
         <img src={container_hanging3} alt="background slide" className="absolute h-full w-full top-0 sm:left-[20%] md:left-[5%] md:scale-x-[1.5] md:scale-y-[1.2] object-cover md:object-contain" />
-        <div className="container mx-auto max-w-[1024px] relative flex flex-col gap-4">
+        <div className="container mx-auto max-w-[1024px] relative flex flex-col gap-4 pb-10 pt-14 sm:py-5">
           <div className="flex justify-between md:items-center flex-col md:flex-row gap-3">
             <div className="flex flex-col gap-4 flex-1">
               <h2 className="text-slate-700 text-5xl sm:text-6xl font-normal max-w-md">We will <span className="text-orange-500">Deliver</span> your <span className="text-orange-500">Package</span></h2>
@@ -40,10 +40,10 @@ export default function Home() {
         <div className="container relative mx-auto max-w-[1024px] flex flex-col items-stretch sm:grid sm:grid-cols-2 gap-5">
           <div className="flex flex-[370px] sm:flex-1 relative rounded-tr-[3.1rem] rounded-bl-[3.1rem] rounded-none border-[12px] border-slate-900 overflow-hidden">
             <img src={container_stack1} alt="" className="absolute top-0 left-0 w-full h-full" />
-            <div className="absolute top-0 left-0 w-[200px] h-[150px] md:w-[250px] md:h-[200px] rounded-none rounded-br-[2rem] border-[12px] border-slate-900 bg-slate-900">
+            <div className="absolute top-0 left-0 w-[200px] h-[150px] md:w-[250px] md:h-[200px] rounded-none rounded-br-[2.5rem] border-[12px] border-slate-900 bg-slate-900">
               <img src={freight_transport1} alt="" className="object-cover w-full h-full rounded-[2rem]" />
             </div>
-            <div className="absolute bottom-0 right-0 w-[150px] h-[150px] md:w-[200px] md:h-[200px] rounded-tl-[2rem] border-[12px] bg-slate-900 border-slate-900" >
+            <div className="absolute bottom-0 right-0 w-[150px] h-[150px] md:w-[200px] md:h-[200px] rounded-tl-[2.5rem] border-[12px] bg-slate-900 border-slate-900" >
               <img src={freight_support3} alt="" className="absolute object-cover w-full h-full rounded-[2rem]" />
             </div>
           </div>
@@ -53,7 +53,7 @@ export default function Home() {
               <p className="text-orange-500 text-4xl font-medium">#1 Logistics</p>
               <p className="text-white py-2 text-5xl font-thin uppercase">Worldwide</p>
             </div>
-            <p className="text-slate-50/50 text-sm md:text-base leading-loose sm:max-w-xs">We are an international scale company that has been trusted by all corners of the world. Use our copany to expedite your package delivery!</p>
+            <p className="text-slate-50/50 text-sm md:text-base leading-loose sm:max-w-xs">We are an international scale company that has been trusted by all corners of the world. Use our company to expedite your package delivery!</p>
             <div className="flex gap-3 py-3">
               <Button text={"Get in Touch"} to={"/contact"} key={181} />
               <Button icon={<IoPlayCircleOutline className="text-lg text-white capitalize" />} text={"Watch Video"} className={'bg-transparent text-slate-50 border-slate-50 border-[1px]'} to={"/contact"} key={182} />

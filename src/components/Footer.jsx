@@ -14,7 +14,7 @@ export default function Footer() {
             </Link>
             <h3 className="text-3xl sm:text-4xl text-white font-thin">Retrogistics</h3>
           </div>
-          <p className="pb-2 text-slate-200 text-xs sm:text-sm leading-loose md:leading-tight">Retrogistics is the leading web-based order management and shipping software designed to make retailers exceptionally effieicne at processing and shipping</p>
+          <p className="pb-2 text-slate-200 text-xs sm:text-sm leading-loose md:leading-tight">Retrogistics is the leading web-based order management and shipping software designed to make retailers exceptionally efficient at processing and shipping</p>
         </div>
         <div className="col-span-2 flex flex-wrap gap-4 sm:justify-around sm:pt-6 md:pl-10">
           <ul className="flex flex-col flex-1 sm:w-max">
