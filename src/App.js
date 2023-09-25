@@ -15,7 +15,7 @@ import { useContext } from "react";
 import { GlobalContext } from "./context/AuthContext";
 
 function App() {
-  const {currentUser, darkMode} = useContext(GlobalContext)
+  const { darkMode} = useContext(GlobalContext)
   const Layout = () => {
       return(
         <>
