@@ -62,7 +62,7 @@ export default function Contact() {
                   </div>
                   <div className="flex-1 flex flex-col w-full bg-gray-100 rounded-md p-2">
                     <TextInput className={'border-slate-200 w-full valid:border-0 bg-transparent flex-1 p-1 font-medium'} value={inputs.email} onChange={handleChange} type={'email'} name={'email'} placeholder={'Email e.g. johndoe@gmail.com'} key={543} id={'email'} />
-                    <TextInput className={'border-slate-200 w-full valid:border-0 bg-transparent flex-1 p-1'} value={inputs.phone} onChange={handleChange} required={false} name={'phone'} placeholder={'Phone Number (optional)'} key={544} id={'pohne'} />
+                    <TextInput className={'border-slate-200 w-full valid:border-0 bg-transparent flex-1 p-1'} value={inputs.phone} onChange={handleChange} required={false} name={'phone'} placeholder={'Phone Number (optional)'} key={544} id={'phone'} />
                   </div>
                 </div>
                 <div className="flex gap-3 items-center px-4 pr-5 py-5">

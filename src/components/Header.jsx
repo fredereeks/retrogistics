@@ -1,8 +1,11 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useContext, useEffect, useState, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 // import { dish1 } from '../assets/images'
 import { headerLinks } from '../data/headerLinks'
 import LinkCard from './LinkCard'
+import { GlobalContext } from '../context/AuthContext'
+import { IoSunnyOutline } from 'react-icons/io5'
+import { FaMoon } from 'react-icons/fa'
 
 
 export default function Header() {
@@ -11,6 +14,7 @@ export default function Header() {
   const header = useRef();
   const navRef = useRef();
   const location = useLocation();
+    const { handleDarkMode, darkMode } = useContext(GlobalContext)
 
   useEffect(() => {
     window.onscroll = () => {
@@ -45,10 +49,15 @@ export default function Header() {
             <Link to="/contact" className={`py-2 px-5 text-sm sm:text-sm text-slate-50 sm:ml-2 bg-slate-700 sm:bg-white sm:text-slate-700 sm:border-[1px] sm:border-slate-700 rounded-0 md:ml-[4rem] sm:rounded-[2rem] sm:text-center hover:sm:text-slate-200 hover:sm:bg-slate-700`}>Get In Touch</Link>
           </ul>
         </nav>
+	<div className="nav__extra">
+                    <div onClick={handleDarkMode} className="grid place-items-center h-[25px] w-[25px] cursor-pointer">
+                        {darkMode ? <IoSunnyOutline className='text-white text-sm' /> : <FaMoon className='text-slate-700 text-sm' />}
+                    </div>
         <div onClick={() => setNavShow(prev => !prev)} className="h-[25px] w-[25px] flex items-center justify-center p-1 cursor-pointer sm:hidden">
           <div className="h-[2px] w-full bg-slate-700 rounded-sm relative before:h-[2px]  before:w-full  before:bg-slate-700  before:rounded-sm  before:absolute before:-top-[200%] before:left-0 after:h-[2px]  after:w-full  after:bg-slate-700  after:rounded-sm  after:absolute after:top-[200%] after:left-0"></div>
         </div>
       </div>
+            </div>
     </header>
   )
 }

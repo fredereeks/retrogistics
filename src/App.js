@@ -1,4 +1,4 @@
-import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom"
+import {createHashRouter, RouterProvider, Outlet} from "react-router-dom"
 import About from "./pages/About";
 import Blog from "./pages/Blog";
 import BlogSingle from "./pages/BlogSingle";
@@ -11,8 +11,11 @@ import TermsConditions from "./pages/TermsConditions";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Toaster } from "react-hot-toast";
+import { useContext } from "react";
+import { GlobalContext } from "./context/AuthContext";
 
 function App() {
+  const {currentUser, darkMode} = useContext(GlobalContext)
   const Layout = () => {
       return(
         <>
@@ -23,7 +26,7 @@ function App() {
       )
   }
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: <Layout />,
@@ -66,7 +69,7 @@ function App() {
     
   ])
   return (
-   <div className="bg-gray-100 transition-all duration-300 overflow-x-hidden">
+    <div className={`${darkMode ? 'dark' : 'bg-gray-50 transition-all duration-300 overflow-x-hidden'}`}>
     <Toaster />
     <RouterProvider router={router}></RouterProvider>
    </div>

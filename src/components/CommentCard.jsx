@@ -4,7 +4,7 @@ import moment from 'moment'
 import { IoClose } from 'react-icons/io5'
 // import { toast } from 'react-hot-toast'
 
-import AuthContext from '../context/AuthContext'
+import { GlobalContext } from '../context/AuthContext'
 // import { randomColor } from '../utils'
 
 function CommentCard({ comment_id, post_id, fullname, created_at, text, replies, handleCommentDelete }) {
@@ -17,7 +17,7 @@ function CommentCard({ comment_id, post_id, fullname, created_at, text, replies,
         email: "",
         reply: "",
     })
-    const { currentUser } = useContext(AuthContext);
+    const { currentUser } = useContext(GlobalContext);
 
 
     const handleChange = e => {

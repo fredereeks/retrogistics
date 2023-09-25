@@ -78,7 +78,7 @@ export default function PrivacyPolicies() {
           <h5 className="text-slate-700 text-md sm:text-lg font-medium">8. No Assignment</h5>
           <p style={{lineHeight: 1.5}} className="text-slate-500 leading-loose text-justify text-xs sm:text-sm">8.1 Unless otherwise provided, neither the Company nor the Customer shall be permitted to assign or transfer, in whole or in part, any right, duty, responsibility or obligation contained herein without the written consent of the other party. Customer agrees that the Company may transfer or assign all or any of its rights and obligations to any of its direct or indirect holding companies or subsidiaries, affiliates as defined in clause 1.</p>
 
-          <h5 className="text-slate-700 text-md sm:text-lg font-medium">0. Force Majeure</h5>
+          <h5 className="text-slate-700 text-md sm:text-lg font-medium">9. Force Majeure</h5>
 
           <p style={{lineHeight: 1.5}} className="text-slate-500 leading-loose text-justify text-xs sm:text-sm">9.1 In the Event of Force Majeure, both the Company and the Customer shall be excused from performing or delay in performing the Services and obligations contained herein.</p>
           <p style={{lineHeight: 1.5}} className="text-slate-500 leading-loose text-justify text-xs sm:text-sm">9.2 Each Party agrees to give the other Party immediate oral notice of an Event of Force Majeure, stating its course and probable duration, followed by a written notice as soon as practical. Such Party shall notify the other Party immediately upon termination of such cause.</p>

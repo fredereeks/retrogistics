@@ -8,6 +8,6 @@ export default function TextInput({required, disabled, className, placeholder, t
     name = name || '';
     id = id || '';
   return (
-    <input type={type} value={value} id={id} name={name} onChange={onChange} className={`text-slate-600 text-xs sm:text-sm outline-none border-[1px] ${className}`} placeholder={placeholder} />
+    <input type={type} value={value} id={id} name={name} required={required} onChange={onChange} className={`text-slate-600 text-xs sm:text-sm outline-none border-[1px] ${className}`} placeholder={placeholder} />
   )
 }
